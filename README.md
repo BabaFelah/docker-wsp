@@ -1,0 +1,2 @@
+# docker-wsp
+Workspace codespaces
