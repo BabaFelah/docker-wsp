@@ -1,6 +1,5 @@
 services:
   db:
-    container_name: postgres
     image: postgres:17-alpine
     environment:
       POSTGRES_USER: 'postgres'
@@ -12,7 +11,6 @@ services:
       - vol-pgdata:/var/lib/postgresql/data
 
   pgadmin:
-    container_name: pgadmin
     image: dpage/pgadmin4:latest
     environment:
       PGADMIN_DEFAULT_EMAIL: "pgadmin@pgadmin.com"
