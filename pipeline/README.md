@@ -66,14 +66,6 @@ docker compose -f pipeline/docker-compose.yaml up --build -d
 
 - Data files are stored under the `pipeline/data` directory in this repository. Check `pipeline/docker-compose.yaml` for any volume mappings or environment configuration.
 
-
-
-Convenience files added
-
-- `pipeline/.env.example`: example environment variables for services. Copy to `pipeline/.env` and edit before running Compose.
-- `Makefile`: top-level convenience targets (`make build`, `make up`, `make up-build`, `make logs`, `make down`) that wrap the `docker compose -f pipeline/docker-compose.yaml ...` commands.
-
-
 Running the Ingestion Script with Docker Compose
 
 ```bash
