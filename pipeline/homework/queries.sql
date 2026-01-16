@@ -41,7 +41,7 @@ SELECT
 FROM  green_taxi_data T
 JOIN taxi_zone P
   ON P."LocationID" = t."PULocationID"
-LEFT JOIN taxi_zone D
+JOIN taxi_zone D
   ON D."LocationID" = t."DOLocationID"
 WHERE P."Zone" = 'East Harlem North'
   AND t.lpep_pickup_datetime >= '2025-11-01'
